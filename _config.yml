@@ -29,7 +29,6 @@ markdown: kramdown
 remote_theme: geinosky/jekyll-koru
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
