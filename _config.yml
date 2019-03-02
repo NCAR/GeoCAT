@@ -25,9 +25,10 @@ github_username:  geinosky
 
 # Build settings
 markdown: kramdown
-remote_theme: geinosky/jekyll-koru
+remote_theme: ncar/jekyll-koru
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
