@@ -25,7 +25,7 @@ github_username:  geinosky
 
 # Build settings
 markdown: kramdown
-remote_theme: ncar/jekyll-koru@0.2.2
+remote_theme: ncar/jekyll-koru@0.2.3
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
