@@ -1,0 +1,11 @@
+menu:
+  - title: Software
+    url: software.html
+  - title: Documentation
+    url: documentation.html
+  - title: Contributing
+    url: contributing.html
+  - title: Images
+    url: https://google.com
+  - title: Help
+    url: help.html
