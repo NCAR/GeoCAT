@@ -1,11 +1,11 @@
 menu:
   - title: Software
-    url: /pages/software.html
+    url: /jekyll-koru-test/pages/software.html
   - title: Documentation
-    url: /pages/documentation.html
+    url: /jekyll-koru-test/pages/documentation.html
   - title: Contributing
-    url: /pages/contributing.html
+    url: /jekyll-koru-test/pages/contributing.html
   - title: Images
     url: https://google.com
   - title: Help
-    url: /pages/help.html
+    url: /jekyll-koru-test/pages/help.html
