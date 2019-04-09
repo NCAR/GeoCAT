@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   web:
-    container_name: koru-jekyll-test
-    image: koru-jekyll:latest
+    container_name: koru-jekyll-site
+    image: koru-jekyll-site:latest
     build:
       context: .
       dockerfile: Dockerfile
