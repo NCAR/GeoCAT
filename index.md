@@ -3,8 +3,8 @@ layout: frontpage
 title: Home
 banner-title: Example Github site
 banner-description: This is site is an example of a Github pages website using a custom Jekyll theme.
-banner-button-text: Custom Jekyll theme
-banner-button-url: https://github.com/NCAR/koru-jekyll
+banner-button-text: Download
+banner-button-url: https://github.com/NCAR/jekyll-koru-test
 ---
 
 # Documentation
