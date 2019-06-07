@@ -1,11 +1,7 @@
 menu:
-  - title: Software
-    url: /jekyll-koru-test/pages/software.html
-  - title: Documentation
-    url: /jekyll-koru-test/pages/documentation.html
-  - title: Contributing
-    url: /jekyll-koru-test/pages/contributing.html
-  - title: Images
-    url: https://google.com
-  - title: Help
-    url: /jekyll-koru-test/pages/help.html
+  - title: Layouts
+    url: /jekyll-koru-test/pages/layouts.html
+  - title: Main Menu
+    url: /jekyll-koru-test/pages/main-menu.html
+  - title: Local Development
+    url: /jekyll-koru-test/pages/local-development.html
