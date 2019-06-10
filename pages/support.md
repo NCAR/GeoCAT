@@ -3,7 +3,7 @@ layout: default
 title: Support
 ---
 
-# Support
+## Support
 
 ### Jekyll Docs
 * [Getting Started](https://jekyllrb.com/docs/)
@@ -15,8 +15,8 @@ title: Support
 
 ### Sphinx and Jekyll
 
-Because Jekyll ignores all directories that begin with an underscore (_css/), Sphinx documentation will not display correctly.
+Sphinx documentation will not display correctly if both Jekyll and Sphinx are in the /docs directory. This is due to Jekyll ignoring all directories that begin with an underscore.
 
 ### Feature Requests
 
-If you have a feature you would like to see added to this template, please contact [SWES](swes@ucar.edu).
+If you have a feature you would like to see added to this template, please contact [SWES](mailto:swes@ucar.edu).

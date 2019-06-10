@@ -3,7 +3,7 @@ layout: default
 title: Layouts
 ---
 
-# Layouts
+## Layouts
 ### Default
 
 The only front matter information required for default pages is:

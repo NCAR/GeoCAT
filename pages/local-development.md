@@ -3,7 +3,7 @@ layout: default
 title: Local Development
 ---
 
-# Local Development
+## Local Development
 
 Run `docker-compose up --build` to (re)build the jekyll images and run the container.
 

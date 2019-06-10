@@ -5,7 +5,7 @@ title: Main Menu
 
 ## Updating the main menu
 
-The main menu is set in the mainmenu.yml file in the _data directory. Paths can be both absolute and relative in the menu. The structure for creating a menu is:
+The main menu is set in the mainmenu.yml file in the _data directory. Paths can be either absolute or relative in the menu. The structure for creating a menu is:
 
 ```yml
 menu:
