@@ -13,6 +13,9 @@ title: Support
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Repository metadata on Github](https://help.github.com/en/articles/repository-metadata-on-github-pages)
 
+### Docker
+* [Install Docker](https://docs.docker.com/v17.12/install/)
+
 ### Sphinx and Jekyll
 
 Sphinx documentation will not display correctly if both Jekyll and Sphinx are in the /docs directory. This is due to Jekyll ignoring all directories that begin with an underscore.
