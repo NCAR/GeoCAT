@@ -4,22 +4,12 @@ title: Support
 ---
 
 ## Support
+### User support
+Please submit a [GitHub issue on the GeoCAT GitHub repository](https://github.com/ncar/geocat/issues) for usage support.
 
-### Jekyll Docs
-* [Getting Started](https://jekyllrb.com/docs/)
-
-### Github Docs
-* [Github Pages Basics](https://help.github.com/en/categories/github-pages-basics)
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-* [Repository metadata on Github](https://help.github.com/en/articles/repository-metadata-on-github-pages)
-
-### Docker
-* [Install Docker](https://docs.docker.com/v17.12/install/)
-
-### Sphinx and Jekyll
-
-Sphinx documentation will not display correctly if both Jekyll and Sphinx are in the /docs directory. This is due to Jekyll ignoring all directories that begin with an underscore.
-
-### Feature Requests
-
-If you have a feature you would like to see added to this template, please contact [SWES](mailto:swes@ucar.edu).
+### Bug reports, feature requests, and other software issues
+Please submit bug reports, feature requests, or other software-related issues as GitHub issues on the appropriate sub-package GitHub repository:
+* [PyNGL](https://github.com/NCAR/pyngl/issues)
+* [PyNIO](https://github.com/NCAR/pynio/issues)
+* [WRF-Python](https://github.com/NCAR/wrf-python/issues)
+* [PyNComp](https://github.com/NCAR/pyncomp/issues)
