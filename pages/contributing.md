@@ -23,7 +23,7 @@ The source code is available on GitHub:
 * [PyNGL](https://github.com/NCAR/pyngl)
 * [PyNIO](https://github.com/NCAR/pynio)
 * [WRF-Python](https://github.com/NCAR/wrf-python)
-* [PyNComp](https://github.com/NCAR/pyncomp)
+* [GeoCAT-comp](https://github.com/NCAR/geocat-comp)
 
 
 ### Git Flow
@@ -59,4 +59,4 @@ Users are encouraged to contribute various ways. This includes:
 * [WRF-Python](https://wrf-python.readthedocs.io/en/latest/contrib.html)
 * PyNGL (coming soon)
 * PyNIO (coming soon)
-* PyNComp (coming soon)
+* GeoCAT-comp (coming soon)

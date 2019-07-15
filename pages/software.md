@@ -9,6 +9,10 @@ GeoCAT is a collection of Python tools related to [NCL (NCAR Command Language)](
 NCL consists of three primary components: graphics, file I/O, and computational routines.
 The GeoCAT project provides these components of NCL to Python users.
 
+### GeoCAT-comp
+* **GeoCAT** **comp**utational library (Python wrapper around NCL's non-WRF computational routines)
+* [Project homepage and GitHub repository](https://github.com/NCAR/geocat-comp)
+
 ### PyNGL
 * **Py**thon **N**CL **G**raphics **L**ibrary
 * [Project homepage](https://www.pyngl.ucar.edu)
@@ -26,8 +30,4 @@ The GeoCAT project provides these components of NCL to Python users.
 * [Project homepage](https://wrf-python.readthedocs.io/en/latest)
 * [GitHub repository](https://github.com/NCAR/wrf-python)
 * [Installation instructions](https://wrf-python.readthedocs.io/en/latest/installation.html)
-
-### PyNComp
-* **Py**thon **N**CL **Comp**utation (excluding WRF)
-* [Project homepage](https://github.com/NCAR/pyncomp)
 

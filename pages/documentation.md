@@ -14,5 +14,5 @@ title: Documentation
 ### WRF-Python
 * [WRF-Python Documentation](https://wrf-python.readthedocs.io/en/latest/)
 
-### PyNComp
+### GeoCAT-comp
 * WIP
