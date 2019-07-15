@@ -2,9 +2,6 @@
 	path = gh-pages
 	url = git@github.com:NCAR/GeoCAT.git
 	branch = gh-pages
-[submodule "pyncomp"]
-	path = pyncomp
-	url = git@github.com:NCAR/pyncomp.git
 [submodule "pyngl"]
 	path = pyngl
 	url = git@github.com:NCAR/pyngl.git
@@ -14,3 +11,6 @@
 [submodule "wrf-python"]
 	path = wrf-python
 	url = git@github.com:NCAR/wrf-python.git
+[submodule "GeoCAT-comp"]
+	path = GeoCAT-comp
+	url = git@github.com:NCAR/GeoCAT-comp.git
