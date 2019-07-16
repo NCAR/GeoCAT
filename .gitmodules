@@ -1,7 +1,3 @@
-[submodule "gh-pages"]
-	path = gh-pages
-	url = git@github.com:NCAR/GeoCAT.git
-	branch = gh-pages
 [submodule "pyngl"]
 	path = pyngl
 	url = git@github.com:NCAR/pyngl.git
