@@ -1,9 +1,9 @@
 menu:
   - title: Software
-    url: /GeoCAT/pages/software.html
+    url: /pages/software.html
   - title: Documentation
-    url: /GeoCAT/pages/documentation.html
+    url: /pages/documentation.html
   - title: Contributing
-    url: /GeoCAT/pages/contributing.html
+    url: /pages/contributing.html
   - title: Support
-    url: /GeoCAT/pages/support.html
+    url: /pages/support.html

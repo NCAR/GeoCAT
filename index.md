@@ -4,7 +4,7 @@ title: Home
 banner-title: GeoCAT
 banner-description: This is the homepage for GeoCAT
 banner-button-text: GeoCAT Software
-banner-button-url: /GeoCAT/pages/software.html
+banner-button-url: /pages/software.html
 ---
 
 # Welcome
