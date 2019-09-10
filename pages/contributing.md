@@ -20,10 +20,10 @@ collaborators remain on the same page regarding contributions.
 
 The source code is available on GitHub:
 
+* [GeoCAT-comp](https://github.com/NCAR/geocat-comp)
 * [PyNGL](https://github.com/NCAR/pyngl)
 * [PyNIO](https://github.com/NCAR/pynio)
 * [WRF-Python](https://github.com/NCAR/wrf-python)
-* [GeoCAT-comp](https://github.com/NCAR/geocat-comp)
 
 
 ### Git Flow

@@ -11,7 +11,9 @@ The GeoCAT project provides these components of NCL to Python users.
 
 ### GeoCAT-comp
 * **GeoCAT** **comp**utational library (Python wrapper around NCL's non-WRF computational routines)
-* [Project homepage and GitHub repository](https://github.com/NCAR/geocat-comp)
+* [Project homepage](https://geocat-comp.readthedocs.io/)
+* [GitHub repository](https://github.com/NCAR/geocat-comp)
+* [Installation instructions](https://geocat-comp.readthedocs.io/en/latest/installation.html)
 
 ### PyNGL
 * **Py**thon **N**CL **G**raphics **L**ibrary

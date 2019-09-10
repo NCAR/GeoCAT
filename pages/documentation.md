@@ -5,6 +5,9 @@ title: Documentation
 
 ## Documentation
 
+### GeoCAT-comp
+* [GeoCAT-comp Documentation](https://geocat-comp.readthedocs.io/)
+
 ### PyNGL
 * [PyNGL Documentation](https://www.pyngl.ucar.edu/)
 
@@ -13,6 +16,3 @@ title: Documentation
 
 ### WRF-Python
 * [WRF-Python Documentation](https://wrf-python.readthedocs.io/en/latest/)
-
-### GeoCAT-comp
-* WIP
