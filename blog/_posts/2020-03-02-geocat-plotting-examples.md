@@ -52,10 +52,10 @@ and Cartopy may go a long way toward meeting these needs. We'd love to hear the
 community's thoughts on this matter and welcome your comments to this blog.
 
 
-Here's a quick look at some of our new Python example plots (left) along side
+Here's a quick look at some of our new Python example plots (left) alongside
 their NCL equivalents (right). The complete set of example Python plots, along
 with the scripts used to generate them, is available from the GeoCAT example
-repository here.
+repository [here](https://geocat-examples.readthedocs.io/en/latest/).
 
 
 
