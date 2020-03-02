@@ -7,7 +7,5 @@ menu:
     url: /pages/contributing.html
   - title: Support
     url: /pages/support.html
-  - title: Community
-    submenu:
-      - title: Blog
-        url: /blog/
+  - title: Blog
+    url: /blog/
