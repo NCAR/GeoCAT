@@ -15,6 +15,15 @@ The GeoCAT project provides these components of NCL to Python users.
 * [GitHub repository](https://github.com/NCAR/geocat-comp)
 * [Installation instructions](https://geocat-comp.readthedocs.io/en/latest/installation.html)
 
+### GeoCAT-examples
+* **GeoCAT** **Example** scripts (a collection of Python scripts ported from the [NCL examples website](https://ncl.ucar.edu/Applications/))
+* [Project homepage](https://geocat-examples.readthedocs.io/)
+* [GitHub repository](https://github.com/NCAR/geocat-examples)
+
+### GeoCAT-viz
+* **GeoCAT** **vi**suali**z**ation library (a collection of Python functions intended to make Matplotlib/Cartopy feel more like NCL)
+* [GitHub repository](https://github.com/NCAR/geocat-viz)
+
 ### PyNGL
 * **Py**thon **N**CL **G**raphics **L**ibrary
 * [Project homepage](https://www.pyngl.ucar.edu)
