@@ -19,10 +19,10 @@ of the GeoCAT Examples project is to provide a gallery of example Python scripts
 that correspond to existing NCL examples to be used as a starting point for new
 Python programmers.
 
-The GeoCAT team recently led a highly successful two-day plotting hackathon. The
-goal of the hackathon was to convert a broad sampling of NCL example plots into
-Python using Matplotlib and Cartopy. These efforts were aimed at better
-informing the GeoCAT team regarding the rumored gaps between NCL and
+The GeoCAT and XDev teams recently led a highly successful two-day plotting
+hackathon. The goal of the hackathon was to convert a broad sampling of NCL
+example plots into Python using Matplotlib and Cartopy. These efforts were aimed
+at better informing the GeoCAT team regarding the rumored gaps between NCL and
 Matplotlib/Cartopy plotting capabilities, as well as to provide training tools
 for the user community demonstrating how to generate NCL-like plots in Python.
 26 example scripts were successfully converted and are now available from a new
