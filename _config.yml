@@ -26,7 +26,7 @@ analytics: UA-332815-90
 
 # Build settings
 markdown: kramdown
-remote_theme: ncar/koru-jekyll@1.0.26
+remote_theme: ncar/koru-jekyll@1.0.27
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
