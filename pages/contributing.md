@@ -3,8 +3,7 @@ layout: default
 title: Contributing
 ---
 
-## Contributing
-
+## <img align="center" width="10%" height="10%" src="/images/GeoCAT_Final_Logos-03.svg"> Contributing
 ### Introduction
 
 Thank you for your interest in contributing to the GeoCAT project.

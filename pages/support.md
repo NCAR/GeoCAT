@@ -3,7 +3,7 @@ layout: default
 title: Support
 ---
 
-## Support
+## <img align="center" width="10%" height="10%" src="/images/GeoCAT_Final_Logos-03.svg"> Support
 ### User support
 Please submit a [GitHub issue on the GeoCAT GitHub repository](https://github.com/ncar/geocat/issues) for usage support.
 

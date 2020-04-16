@@ -1,8 +1,7 @@
 ---
 layout: frontpage
 title: Home
-banner-title: GeoCAT
-banner-description: This is the homepage for GeoCAT
+banner-title: <img src='/images/GeoCAT_Final_Logos-02.svg' style="margin:-10% 0px -7% 0px;" width=500 />
 banner-button-text: GeoCAT Software
 banner-button-url: /pages/software.html
 ---

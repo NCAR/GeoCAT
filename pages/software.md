@@ -3,7 +3,7 @@ layout: default
 title: Software
 ---
 
-## Our software
+## <img align="center" width="10%" height="10%" src="/images/GeoCAT_Final_Logos-03.svg"> Software
 GeoCAT is a collection of Python tools related to [NCL (NCAR Command Language)](https://ncl.ucar.edu).
 
 NCL consists of three primary components: graphics, file I/O, and computational routines.

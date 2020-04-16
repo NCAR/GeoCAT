@@ -3,8 +3,7 @@ layout: default
 title: Documentation
 ---
 
-## Documentation
-
+## <img align="center" width="10%" height="10%" src="/images/GeoCAT_Final_Logos-03.svg"> Documentation
 ### GeoCAT-comp
 * [GeoCAT-comp Documentation](https://geocat-comp.readthedocs.io/)
 
