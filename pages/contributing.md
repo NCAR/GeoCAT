@@ -40,7 +40,7 @@ repositories contains. An overview of the various repositories that
 comprise GeoCAT is described below. A diagram showing the various
 dependencies between the repos is available here:
 
-![image](https://www.wpclipart.com/travel/US_Road_Signs/info/temporary.png)
+<img align="center" width="10%" height="10%" src="/images/GeoCAT_Repo_Structure.svg">
 
 Note, this document is a general guide for making contributions to the
 various GeoCAT repositories. In all cases contributors should consult
