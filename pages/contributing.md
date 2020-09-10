@@ -10,8 +10,8 @@ number_sections: true
 * Table of contents
 {:toc}
 
-Getting Started
-===============
+# Getting Started
+
 
 The GeoCAT project is an Open Development, community-owned effort,
 managed by the National Center for Atmospheric Research (NCAR). Its
@@ -28,8 +28,7 @@ development and maintenance of the GeoCAT project. This document is your
 guide to how you can become an active, contributing member of the GeoCAT
 community.
 
-GeoCAT GitHub Repositories
---------------------------
+## GeoCAT GitHub Repositories
 
 Much, if not all, of GeoCAT's software assets (code, documentation,
 example data sets), like many, many open development projects, are
@@ -135,8 +134,8 @@ This repo contains the many data files that are used by GeoCAT-examples
 and possibly other GeoCAT components to test or demonstrate GeoCAT
 functionality.
 
-Working on a GeoCAT GitHub Repo
-===============================
+# Working on a GeoCAT GitHub Repo
+
 
 This section provides an overview on how to make changes to a GeoCAT
 GitHub repo. Contributing to a GeoCAT GitHub repo follows the same
@@ -150,8 +149,8 @@ repo-specific contributors guide is available, it should be consulted.
 Repo-specific contributors information is found in the `CONTRIBUTING.md`
 file at the top of each GitHub repo.
 
-Getting Started with GitHub and Git
------------------------------------
+## Getting Started with GitHub and Git
+
 
 Contributing to one of GeoCAT's repos requires using GitHub, as already
 mentioned, and Git. The latter, Git, is an open source, command line
@@ -201,8 +200,8 @@ Don't type the \$. This simply indicates the command line prompt.
 For further reading see the [GitHub Getting Started
 Guide](https://docs.github.com/en/github/getting-started-with-github).
 
-Forking a Repository
---------------------
+## Forking a Repository
+
 
 The GeoCAT maintainers employ a version of the "Forking Workflow" to
 support contributions from the outside world. This workflow is
@@ -245,14 +244,14 @@ where `YOUR_USER_NAME` is your *GitHub* user name, and
 `GEOCAT_REPO_NAME` is the name of the GeoCAT repository that you wish to
 copy, for example, GeoCAT-comp.
 
-> The git command above does two things, and it is important to
-> understand them. Firstly, it creates a local repository inside of the
-> hidden directory `GEOCAT_REPO_NAME/.git`, that is populated with the
-> contents of the repository you are cloning. You should never need to
-> operate directly on the contents of the .git directory. Secondly, it
-> creates a copy of the repo's assets (e.g. Python files, documentation,
-> etc.) in the local directory `GEOCAT_REPO_NAME`. These are the files
-> that you will edit.
+ The git command above does two things, and it is important to
+ understand them. Firstly, it creates a local repository inside of the
+ hidden directory `GEOCAT_REPO_NAME/.git`, that is populated with the
+ contents of the repository you are cloning. You should never need to
+ operate directly on the contents of the .git directory. Secondly, it
+ creates a copy of the repo's assets (e.g. Python files, documentation,
+ etc.) in the local directory `GEOCAT_REPO_NAME`. These are the files
+ that you will edit.
 
 You now essentially have two clones of the GeoCAT repository, one on the
 GitHub server under your account, and one on your local workstation or
@@ -294,8 +293,7 @@ the contents. Once you are ready to contribute your changes back to the
 GeoCAT repository you will need to submit a Pull Request (PR), described
 later.
 
-Creating a development environment
-==================================
+# Creating a development environment
 
 To test out any code changes, or even make most documentation changes,
 you'll need to create a code development environment that will work with
@@ -308,16 +306,14 @@ for working with Libncomp is described on the Libncomp repository, which
 documentation for configuring Cython is described in the GeoCAT-ncomp
 contributor's guide.
 
-Supported platforms
--------------------
+## Supported platforms
 
 Note, the compiled language components of GeoCAT are currently only
 available on Mac and Linux platforms. Hence, GeoCAT repos with compiled
 language dependencies are not available for Windows platforms.
 Currently, these repositories include: GeoCAT-ncomp, and Libncomp.
 
-Creating a Python environment that will work with GeoCAT
---------------------------------------------------------
+## Creating a Python environment that will work with GeoCAT
 
 Before starting any Python or documentation development, you'll need to
 create an isolated Python environment that will work for GeoCAT. When we
@@ -360,16 +356,14 @@ occasionally need to update the environment (step 2), and you will need
 to activate geocat whenever you run Python on the contents of this
 repository (step 5).
 
-Creating a development environment for compiled code
-----------------------------------------------------
+## Creating a development environment for compiled code
 
 To make changes to repositories containing compiled code (currently only
 Libncomp) you will need to set up a development environment with the
 appropriate compilers. Details on this are discussed in the [Libncomp
 repository](https://github.com/NCAR/libncomp) in `CONTRIBUTING.md`.
 
-Required elements of a Pull Request
-===================================
+# Required elements of a Pull Request
 
 Once you've made changes to your own local copy of a GeoCAT repository
 you need to prepare a Pull Request (PR) that will formally ask the
@@ -378,8 +372,7 @@ repository. The text below discusses in general terms the content that
 must be contained in a PR. As always, consult any repo-specific
 contributor's guide for a particular repository.
 
-All PRs
--------
+## All PRs
 
 1.  All PRs must include a brief summary of the added/modified
     functionality
@@ -388,8 +381,7 @@ All PRs
     "XXX" is the issue number. See [GitHub's documentation on PR
     keywords](https://docs.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue).
 
-New or modified computational functions
----------------------------------------
+## New or modified computational functions
 
 PRs that provide new computational functions (e.g. PRs for code changes
 associated with GeoCAT-comp, or GeoCAT-ncomp) should contain the
@@ -541,8 +533,7 @@ function. However, if an appropriate data file does not already exist in
 the GeoCAT-datafiles repository a new one may be submitted by a PR to
 GeoCAT-datafiles. See below.
 
-New or modified example scripts
--------------------------------
+## New or modified example scripts
 
 All stand-alone example scripts (those not embedded in Python
 docstrings) are maintained in the GeoCAT-examples repository. Typically,
@@ -576,8 +567,7 @@ prioritized in the following order:
 2.  User-contributed data files, only allowed for data sets
     demonstrating unique functionality. See below.
 
-New or modified documentation
------------------------------
+## New or modified documentation
 
 Documentation comes in three flavors in GeoCAT: Python docstrings that
 are used to generate most reference (API) documentation, Python script
@@ -618,7 +608,7 @@ converted into Jupyter Notebooks using
 improve the formatting of the generated Jupyter Notebooks,
 reStructuredText may be embedded in the Python script comments.
 
-Once changs to the Python script comments are made, the rendered Jupyter
+Once changes to the Python script comments are made, the rendered Jupyter
 Notebook results should be verified, as discussed in the GeoCAT-examples
 Contributors guide.
 
@@ -633,8 +623,7 @@ main topic. For example, the user support documentation for the
 [here](https://geocat-comp.readthedocs.io/en/latest/) is found in the
 file docs/support.rst on the GeoCAT-comp repository.
 
-New or modified example data sets
----------------------------------
+## New or modified example data sets
 
 Small(ish) example data sets - on the order of a few MBs - used for
 testing or examples are contained in the GeoCAT-datasets repository.
@@ -652,8 +641,7 @@ repository before committing their changes and submitting a PR:
 
 >     $ python create_registry.py
 
-How to submit a Pull Request (PR)
-=================================
+# How to submit a Pull Request (PR)
 
 Once you have completed making changes to your local copy of a GeoCAT
 repository and are ready to have your changes merged with a GeoCAT
@@ -673,8 +661,7 @@ be found [here](https://git-scm.com/), but your best friend for figuring
 out to do things with Git may be Google, and in particular
 [StackOverflow](https://stackoverflow.com/).
 
-Committing your code locally with Git
--------------------------------------
+## Committing your code locally with Git
 
 Changes you've made to your local copy of a repository must be
 "committed" (merged) to your local repository (the .git subdirectory)
@@ -701,8 +688,7 @@ informative. If you make lots of changes, it is best to make multiple
 commits, broken up into related chunks. E.g. "fixed x", "added
 documentation", "added testing".
 
-Pushing your changes to your personal GitHub repository
--------------------------------------------------------
+## Pushing your changes to your personal GitHub repository
 
 Once all of your changes have been committed to your local .git
 repository you are ready to "push" (merge) them with your personal
@@ -721,8 +707,7 @@ GitHub under your personal account, but they are not yet part of the
 GeoCAT repo. For that to happen one more step is required: submitting a
 pull request.
 
-Submitting a PR
----------------
+## Submitting a PR
 
 Finally, you are almost ready to make a PR to merge your personal GitHub
 repository into the official GeoCAT repository.
@@ -774,8 +759,7 @@ done with the command:
 
 >     $ git push origin FEATURE_NAME
 
-Python coding conventions and formatting
-========================================
+# Python coding conventions and formatting
 
 Python code will be formatted with YAPF to the \"google\" style. This
 formatting is done automatically upon push. However, you may also
@@ -798,8 +782,7 @@ Or
 
 This will generate the code style used in all geocat repositories.
 
-Should I develop code in Fortran or Python?
-===========================================
+# Should I develop code in Fortran or Python?
 
 The computational routines in GeoCAT are a mixture of Fortran kernels
 with Python language bindings, and pure Python code. Much of
@@ -815,17 +798,14 @@ porting NCL computational functions to GeoCAT. The Fortran
 implementations might simply be too complex to warrant rewrites in pure
 Python (or Cython).
 
-GeoCAT\'s Git Workflow
-======================
+# GeoCAT\'s Git Workflow
 
 GeoCAT will use the GitHub Flow model for branches. GeoCAT also uses an
 automated formatter on all pushes to any python containing repository.
 This changes the normal git workflow slightly, so in order to avoid any
 annoyances, follow these steps:
 
-Forking
--------
-
+## Forking
 1.  On GitHub, sign in to your account and go to the NCAR repository you
     intend to fork.
 2.  Select **Fork** in the upper right hand corner
@@ -835,8 +815,7 @@ Forking
 
 This will check out your forked repo
 
-Branch creation
----------------
+## Branch creation
 
 1.  First, check out the master branch by running:
 
@@ -865,8 +844,7 @@ Which is the same as running :
 >     $ git branch -u origin <new_branch>
 >     $ git push
 
-Using the branch
-----------------
+## Using the branch
 
 After making changes, run:
 
@@ -874,8 +852,7 @@ After making changes, run:
 >     $ git pull
 >     $ git commit -sm "your commit message"
 
-Removing the branch
--------------------
+## Removing the branch
 
 To remove a branch that is no longer needed, run:
 
@@ -888,8 +865,7 @@ To remove the branch from the remote, run:
 
 >     $ git push origin -d <branch to be deleted>
 
-Daily maintenance
------------------
+## Daily maintenance
 
 To bring your branch list up to date with GitHub\'s upstream, run:
 
