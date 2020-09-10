@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contributing
+title: Contributor's Guide
 number_sections: true
 ---
 
