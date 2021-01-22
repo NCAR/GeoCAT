@@ -15,4 +15,4 @@ GeoCAT is a product of the **National Center for Atmospheric Research's Computat
 
 Visit the [GeoCAT Development Blog](blog) to read about our latest development progress.
 
-{% include youtubePlayer.html id=page.youtubeId %}
+{% include youtubePlayer.html %}
