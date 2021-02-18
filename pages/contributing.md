@@ -486,18 +486,24 @@ An example function and its docstring are shown here:
 >     """ 
 >     Utility function to make plots look like NCL plots by using latitude, 
 >     longitude tick labels 
->     Args:
+>     
+>     Parameters
+>     ----------
 >
->         ax (:class:`matplotlib.axes._subplots.AxesSubplot` or
->         :class:`cartopy.mpl.geoaxes.GeoAxesSubplot`): Current axes to
->         the current figure
+>     ax : :class:`matplotlib.axes._subplots.AxesSubplot` or 
+>     :class:`cartopy.mpl.geoaxes.GeoAxesSubplot`: 
+> 
+>       Current axes to the current figure
 >
->         zero_direction_label (:class:`bool`): Set True to get 0 E / O W 
->         or False to get 0 only.
+>     zero_direction_label : :class:`bool`: 
+> 
+>       Set True to get 0 E / O W or False to get 0 only.
 >
->         dateline_direction_label (:class:`bool`): Set True to get 
->         180 E / 180 W or False to get 180 only.
-> """ 
+>     dateline_direction_label : :class:`bool`: 
+> 
+>       Set True to get 180 E / 180 W or False to get 180 only.
+>     
+>     """ 
 > ```
 
 Finally, the function name must be added to the appropriate index.rst
