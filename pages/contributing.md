@@ -36,9 +36,9 @@ community.
 
 Much, if not all, of GeoCAT's software assets (code, documentation,
 example data sets), like many, many open development projects, are
-maintained in a GitHub repository. More will be said on working with
+maintained in a GitHub repository (repo). More will be said on working with
 GitHub later, but for now it is only important to understand that GeoCAT
-is split into multiple repositories (repos), and what each of those
+is split into multiple repositories, and what each of those
 repositories contains. An overview of the various repositories that
 comprise GeoCAT is described below. A diagram showing the various
 dependencies between the repos is available here:
@@ -62,59 +62,58 @@ do not produce plots.
 
 Note: The term \"GeoCAT-comp\" stands for both the whole computational
 component of the GeoCAT project and a single Github repository as
-described in this section. many of the computational functions in GeoCAT
-are implemented in Fortran (or possibly C). However, others can be
-implemented in a pure Python fashion. To facilitate contribution, the
-whole GeoCAT-comp structure is split into repositories with respect to
-being pure-Python, Python with Cython wrappers for compiled codes, and
-compiled language (C and Fortran) implementations. Such implementation
-layers are handled within GeoCAT-comp, GeoCAT-ncomp, and libncomp
-repositories, respectively (GeoCAT-ncomp and libncomp will be described
-in the next sections).
+described in this section. Many of the computational functions in GeoCAT
+are implemented in a pure Python fashion. However, there are some others 
+that are implemented in Fortran but wrapped up in Python. To facilitate 
+contribution, the whole GeoCAT-comp structure is split into two 
+repositories with respect to being pure-Python or Python with compiled 
+codes (i.e. Fortran) implementations. Such implementation layers are 
+handled within [GeoCAT-comp](https://github.com/NCAR/geocat-comp) and 
+[GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) repositories, 
+respectively ([GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) will 
+be described in the next section).
 
-GeoCAT-comp repo does not explicitly contain or require any compiled
-code, making it more accessible to the general Python community at
-large. However, if GeoCAT-ncomp, which will be described in the next
-section, is installed, then all functions contained in the
-"geocat.ncomp" module are imported into the "geocat.comp" namespace.
-Thus, GeoCAT-comp repo serves as a user API to access the entire
-computational toolkit even though the repo itself only contains pure
-Python code from the contributor's perspective. Whenever prospective
-contributors want to add new computational functionality implemented as
-pure Python, GeoCAT-comp is the repo to do so. Therefore, there is no
-onus on contributors of pure python code to build/compile/test any
-compiled code (Cython, C, C++, Fortran) at GeoCAT-comp level.
+[GeoCAT-comp](https://github.com/NCAR/geocat-comp) repo does not 
+explicitly contain or require any compiled code, making it more 
+accessible to the general Python community at large. However, 
+if [GeoCAT-f2py](https://github.com/NCAR/geocat-f2py), which will be 
+described in the next section, is installed, then all functions 
+contained in the "geocat.f2py" package are imported seamlessly into 
+the "geocat.comp" namespace. Thus, GeoCAT-comp repo serves as a user 
+API to access the entire computational toolkit even though the repo 
+itself only contains pure Python code from the contributor's perspective. 
+Whenever prospective contributors want to add new computational 
+functionality implemented as pure Python, 
+[GeoCAT-comp](https://github.com/NCAR/geocat-comp) is the repo to do so. 
+Therefore, there is no onus on contributors of pure python code to 
+build/compile/test any compiled code (i.e. Fortran) at 
+[GeoCAT-comp](https://github.com/NCAR/geocat-comp) level.
 
-### 1.1.2 [GeoCAT-ncomp](https://github.com/NCAR/geocat-ncomp)
+### 1.1.2 [GeoCAT-f2py](https://github.com/NCAR/geocat-f2py)
 
-This repo wraps, in Cython, the compiled language implementations of
-functions found in the Libncomp repo that will be described in the next
-section. Again, developers basing their implementations entirely in
-Python need not concern themselves with this repo as it is invisibly
-imported from within the GeoCAT-comp repo. However, for those functions
-that are implemented in Fortran (or possibly C or C++), this repo
-provides a Python interface to those functions via a Cython wrapper.
+GeoCAT-f2py wraps, in Python, the compiled language implementations of 
+some of the computational functions found under the 
+[GeoCAT-comp](https://github.com/NCAR/geocat-comp) umbrella. The compiled 
+language functions contained in GeoCAT-f2py (i.e. this repo) as Fortran 
+subroutines are wrapped up in corresponding Python wrapper files in the 
+same repo with the help of [Numpy's f2py](https://numpy.org/doc/stable/f2py/)'s 
+signature files (.pyf).
 
-### 1.1.3 [Libncomp](https://github.com/NCAR/libncomp)
+Again, developers basing their implementations entirely in Python need not 
+concern themselves with this repo; instead, they should engage with 
+[GeoCAT-comp](https://github.com/NCAR/geocat-comp) repo as it invisibly 
+imports [GeoCAT-f2py](https://github.com/NCAR/geocat-f2py). However, for 
+those functions that are implemented in Fortran, this repo provides a Python 
+interface to those functions via [Numpy's f2py](https://numpy.org/doc/stable/f2py/).
 
-This repo contains compiled language implementations of some of the
-computational functions found under the GeoCAT-comp umbrella in order to
-wrap up algorithms written in Fortran with C++ for work array allocation
-and looping logic. The libraries contained in this repository are not
-callable by Python directly; instead, they are wrapped with Cython
-within the GeoCAT-ncomp repo. Not all computational functions in GeoCAT
-have compiled language implementations, and developers basing their
-implementations entirely in Python need not concern themselves with this
-repo (as described in the GeoCAT-comp and GeoCAT-ncomp sections).
-
-### 1.1.4 [GeoCAT-viz](https://github.com/ncar/geocat-viz)
+### 1.1.3 [GeoCAT-viz](https://github.com/ncar/geocat-viz)
 
 The GeoCAT-viz repo contains tools to help plot data, primarily
 convenience functions that are used to facilitate plotting geosciences
 data with Matplotlib, Cartopy, and possibly other Python ecosystem
 plotting packages.
 
-### 1.1.5 [GeoCAT-examples](https://github.com/ncar/geocat-examples)
+### 1.1.4 [GeoCAT-examples](https://github.com/ncar/geocat-examples)
 
 This repo contains examples that demonstrate how to use GeoCAT's
 computational functions, or how to plot data with packages in the Python
@@ -125,6 +124,12 @@ Docs](https://geocat-examples.readthedocs.io/en/latest/) to see the
 example plots and to access auto-generated Jupyter notebooks of the
 Python code implemented in this repo.
 
+### 1.1.5 [GeoCAT-datafiles](https://github.com/ncar/geocat-datafiles)
+
+This repo contains the many data files that are used by GeoCAT-examples
+and possibly other GeoCAT components to test or demonstrate GeoCAT
+functionality.
+
 ### 1.1.6 [Wrf-python](https://github.com/NCAR/wrf-python)
 
 The wrf-python repo contains functionality that is specific to operating
@@ -132,14 +137,7 @@ on WRF data. It predates the GeoCAT effort, and is not covered in this
 document. Wrf-python provides its own contributors guide
 [here](https://github.com/NCAR/wrf-python).
 
-### 1.1.7 [GeoCAT-datafiles](https://github.com/ncar/geocat-datafiles)
-
-This repo contains the many data files that are used by GeoCAT-examples
-and possibly other GeoCAT components to test or demonstrate GeoCAT
-functionality.
-
 # 2. Working on a GeoCAT GitHub Repo
-
 
 This section provides an overview on how to make changes to a GeoCAT
 GitHub repo. Contributing to a GeoCAT GitHub repo follows the same
@@ -302,20 +300,21 @@ later.
 To test out any code changes, or even make most documentation changes,
 you'll need to create a code development environment that will work with
 whatever GeoCAT repository you are working on. Most of the GeoCAT
-repositories are based on Python. However, Libncomp is implemented in
-C++ and Fortran and requires their respective compilers. The text below
+repositories are based on Python. However, 
+[GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) is implemented in
+Fortran and requires its respective compilers. The text below
 describes setting up a Python environment that will work with GeoCAT's
-Python code. Documentation for setting up your C++/Fortran environment
-for working with Libncomp is described on the Libncomp repository, which
-documentation for configuring Cython is described in the GeoCAT-ncomp
-contributor's guide.
+Python code. Documentation for setting up your Fortran environment
+for working with [GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) is 
+described in the [GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) 
+repository.
 
 ## 3.1 Supported platforms
 
 Note, the compiled language components of GeoCAT are currently only
-available on Mac and Linux platforms. Hence, GeoCAT repos with compiled
-language dependencies are not available for Windows platforms.
-Currently, these repositories include: GeoCAT-ncomp, and Libncomp.
+available on Mac and Linux platforms. Hence, 
+[GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) repo with compiled
+language dependencies is not available for Windows platforms.
 
 ## 3.2 Creating a Python environment that will work with GeoCAT
 
@@ -362,10 +361,11 @@ repository (step 5).
 
 ## 3.3 Creating a development environment for compiled code
 
-To make changes to repositories containing compiled code (currently only
-Libncomp) you will need to set up a development environment with the
-appropriate compilers. Details on this are discussed in the [Libncomp
-repository](https://github.com/NCAR/libncomp) in `CONTRIBUTING.md`.
+To make changes to the [GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) 
+repository (i.e. containing compiled code), you will need to set up a 
+development environment with the appropriate compilers. Details on this 
+are discussed in `CONTRIBUTING.md` file of the 
+[GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) repo.
 
 # 4. Required elements of a Pull Request
 
@@ -388,33 +388,38 @@ contributor's guide for a particular repository.
 ## 4.2 New or modified computational functions
 
 PRs that provide new computational functions (e.g. PRs for code changes
-associated with GeoCAT-comp, or GeoCAT-ncomp) should contain the
+associated with [GeoCAT-comp](https://github.com/NCAR/geocat-comp) or 
+[GeoCAT-f2py](https://github.com/NCAR/geocat-f2py)) should contain the
 following:
 
 ### 4.2.1 Unit Tests
 
 Currently, GeoCAT project employs unit testing for only computational
-functionality (i.e. GeoCAT-comp, GeoCAT-ncomp, and libncomp). All new
-computational functionality needs to include unit testing within each
-repository for the sake of having each repository as a standalone tested
-code base. The GeoCAT project makes use of diverse technologies for
-Python and compiled language repositories:
+functionality repositories (i.e. 
+[GeoCAT-comp](https://github.com/NCAR/geocat-comp) and 
+[GeoCAT-f2py](https://github.com/NCAR/geocat-f2py)). All new computational 
+functions need to include unit testing within the corresponding repository 
+for the sake of having each repository as a standalone tested code base. 
+The GeoCAT project makes use of diverse technologies for unit testing, which 
+is mostly the same for either [GeoCAT-comp](https://github.com/NCAR/geocat-comp) 
+or [GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) (though, GeoCAT-f2py has
+a slight difference that is noted below in one of the steps:
 
-**Python repositories (GeoCAT-comp and GeoCAT-ncomp)**
+**Unit testing of GeoCAT-comp and GeoCAT-f2py**
 
-Tests of every single functionality should be implemented as a separate
-test file under the `\test` folder of the corresponding repository's
-root directory. The [pytest testing
+All the unit tests of every single functionality should be implemented as 
+a separate test script under the `\test` folder of the corresponding 
+repository's root directory. The [pytest testing
 framework](https://docs.pytest.org/en/stable/contents.html) is used as a
 "runner" for the tests.
 
-Test scripts themselves are not intended to use pytest through
-implementation. Instead, pytest should be used only for running test
+Test scripts themselves are not intended to use `pytest` through
+implementation. Instead, `pytest` should be used only for running test
 scripts as follows:
 
 >     $ pytest <test_script_name>.py 
 
-Not using pytest for implementation allows the unit tests to be also run
+Not using `pytest` for implementation allows the unit tests to be also run
 by using:
 
 >     $ python -m unittest <test_script_name>.py
@@ -425,53 +430,34 @@ implementation of the test scripts.
 
 Recommended, but not mandatory, implementation approach is as follows:
 
-1.  Common data structures as well as variables and functions, which
-    could be used by multiple test methods throughout the test script,
-    are defined under a base test class.
-2.  Any group of testing functions dedicated to testing a particular
+1.  Common data structures, variables and functions,  as well as 
+    expected outputs, which could be used by multiple test methods throughout 
+    the test script, are defined either under a base test class or in the very 
+    beginning of the test script for being used by multiple unit test cases.
+
+2.  Only applies to functions that are replicated from NCL: For the sake 
+    of having reference results (i.e. expected output or ground truth for not 
+    all but the most cases), an NCL test script can be written under 
+    `\test\ncl_tests` folder and its output can be used for each testing 
+    scenario.
+    
+3.  Any group of testing functions dedicated to testing a particular
     phenomenon (e.g. a specific edge case, data structure, etc.) is
-    implemented by a class, which inherits TestCase from Python's
-    unittest and likely the base test class implemented for the purpose
+    implemented by a class, which inherits `TestCase` from Python's
+    `unittest` and likely the base test class implemented for the purpose
     mentioned above.
 
-3. Assertions are used for testing various cases such as array comparison.
+4. Assertions are used for testing various cases such as array comparison.
 
 4.  Please see previously implemented test cases for reference of
         the recommended testing approach:
 
     a.  [here in
-        GeoCAT-comp](https://github.com/NCAR/geocat-comp/blob/develop/test/test_polynomial.py)
+        GeoCAT-comp](https://github.com/NCAR/geocat-comp/blob/main/test/test_polynomial.py)
     
     b.  [here in
-        GeoCAT-ncomp](https://github.com/NCAR/geocat-ncomp/blob/develop/test/test_moc_globe_atl.py)
-
-**Compiled language repository (libncomp)**
-
-Tests of every single functionality should be implemented in C language
-as a separate test file under the `\test` folder of the repository's
-root directory.
-
-The following command is executed from the root directory to run test
-cases:
-
->     $ make check
-
-Recommended, but not mandatory, implementation approach is as follows:
-
-1.  Any group of testing methods dedicated to testing a particular
-    phenomenon (e.g. a specific edge case, data structure, etc.) is
-    implemented by a separate C test file.
-2.  "Return 0" indicates a passing test whereas distinct test failures
-    return distinct numeric values.
-3.  For the sake of having reference results (ground truth for not all
-    but the most cases), an NCL test script can be written and its
-    output can be used for each testing scenario.
-4.  Please see previously implemented test cases for reference of the
-    recommended testing approach:
-
-    a.  [C test file](https://github.com/NCAR/libncomp/blob/develop/test/test_eofunc_n_02.c)
-
-    b.  [NCL test script](https://github.com/NCAR/libncomp/blob/develop/test/test_eofunc_02.ncl)
+        GeoCAT-f2py](https://github.com/NCAR/geocat-f2py/blob/main/test/test_moc_globe_atl.py)
+        
 
 ### 4.2.2 Documentation
 
@@ -791,16 +777,14 @@ This will generate the code style used in all geocat repositories.
 The computational routines in GeoCAT are a mixture of Fortran kernels
 with Python language bindings, and pure Python code. Much of
 Fortran-based code is a legacy from the NCAR Command Language. When
-adding computational functions to GeoCAT one must decide whether to
-implement them entirely in Fortran (or possibly C/C++), or to implement
+adding computational functions to GeoCAT, one must decide whether to
+wrap Fortran code up in Python, or to implement
 them purely in Python. Though there are no hard fast rules to this,
 preference is given to pure Python implementations so long as they are
-performant. If a pure Python implementation is simply too slow, consider
-using Cython for better performance. As a last resort a Fortran or C/C++
-implementation might be acceptable. The one exception to this is when
-porting NCL computational functions to GeoCAT. The Fortran
-implementations might simply be too complex to warrant rewrites in pure
-Python (or Cython).
+performant. As a last resort, a Fortran implementation might be acceptable. 
+The one exception to this is when porting NCL computational functions to 
+GeoCAT. The Fortran implementations for some of the algorithms might simply 
+be too complex to warrant rewrites in pure Python.
 
 # 7. GeoCAT\'s Git Workflow
 
