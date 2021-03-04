@@ -20,7 +20,8 @@ of the toolkits under the GeoCAT computational component
 
 ### - GeoCAT-comp v2021.02.0 Released!
 With this release, several new functions, including anomally, 
-climatology, dewtemp, EOF, and relhum, have been available.
+climatology, dewtemp, EOF, and relhum, have been made available.
+
 - Please see 
 [GeoCAT-comp v2021.02.0 Release](https://github.com/NCAR/geocat-comp/releases/tag/v2021.02.0)
 for further information about Release and Developer Notes.
