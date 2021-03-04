@@ -8,9 +8,9 @@ tags: []
 
 Dear GeoCAT Community,
 
-The GeoCAT team would like to share a two-month update here 
+The GeoCAT team would like to share a two-month update 
 about GeoCAT releases and community activities in January and 
-February, 2021:  
+February, 2021 here:  
 
 ## February Updates
 
