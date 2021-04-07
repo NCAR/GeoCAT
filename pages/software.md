@@ -30,7 +30,7 @@ Matplotlib/Cartopy feel more like NCL)
 * **GeoCAT** **datafiles** library (a collection of many data files from several file types that 
 are used by GeoCAT-examples and possibly other GeoCAT components to test or demonstrate GeoCAT 
 functionality)
-* [GitHub repository](https://github.com/NCAR/geocat-viz)
+* [GitHub repository](https://github.com/NCAR/geocat-datafiles)
 
 ### WRF-Python
 * **Python** wrapper around NCL's **WRF**-specific computational routines
