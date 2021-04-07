@@ -4,37 +4,49 @@ title: Software
 ---
 
 ## <img align="center" width="10%" height="10%" src="/images/GeoCAT_Final_Logos-03.svg"> Software
-GeoCAT is a collection of Python tools related to [NCL (NCAR Command Language)](https://ncl.ucar.edu).
+The GeoCAT project consists of two primary components: computational (analysis) and visualization 
+(plotting). These components and their subcomponents are:
 
-NCL consists of three primary components: graphics, file I/O, and computational routines.
-The GeoCAT project provides these components of NCL to Python users.
 
 ### GeoCAT-comp
-* **GeoCAT** **comp**utational library (Python wrapper around NCL's non-WRF computational routines)
+* **GeoCAT** **comp**utational library (The computational component of the GeoCAT project that 
+translates NCL's non-WRF computational routines into Python and implements other geoscientific 
+analysis functions)
 * [Project homepage](https://geocat-comp.readthedocs.io/)
 * [GitHub repository](https://github.com/NCAR/geocat-comp)
 * [Installation instructions](https://geocat-comp.readthedocs.io/en/latest/installation.html)
 
+### GeoCAT-f2py
+* **GeoCAT** **F**ortran**2py**thon (The computational subcomponent of GeoCAT-comp that wraps, 
+in Python, the compiled language implementations of some of the computational functions found 
+under the GeoCAT-comp umbrella)
+* Note: Even though GeoCAT-f2py is publicly available as a software distribution, developers 
+basing their implementations entirely in Python and/or end-users need not concern themselves 
+with this component; instead, they should engage with GeoCAT-comp as it invisibly imports 
+GeoCAT-f2py
+* [Project homepage](https://geocat-f2py.readthedocs.io/)
+* [GitHub repository](https://github.com/NCAR/geocat-f2py)
+* [Installation instructions](https://geocat-f2py.readthedocs.io/en/latest/installation.html)
+
 ### GeoCAT-examples
-* **GeoCAT** **Example** scripts (a collection of Python scripts ported from the [NCL examples website](https://ncl.ucar.edu/Applications/))
+* **GeoCAT** **example** scripts (a collection of Python scripts that demonstrate how to use 
+GeoCAT’s computational functions, or how to plot geoscientific data via packages in the Python 
+ecosystem (primarily, Matplotlib and Cartopy) ( similar or identical to those plots at
+[NCL examples website](https://ncl.ucar.edu/Applications/)))
 * [Project homepage](https://geocat-examples.readthedocs.io/)
 * [GitHub repository](https://github.com/NCAR/geocat-examples)
+* [Installation instructions](https://geocat-examples.readthedocs.io/en/latest/install.html)
 
 ### GeoCAT-viz
-* **GeoCAT** **vi**suali**z**ation library (a collection of Python functions intended to make Matplotlib/Cartopy feel more like NCL)
+* **GeoCAT** **vi**suali**z**ation library (a collection of Python functions intended to make 
+Matplotlib/Cartopy feel more like NCL)
 * [GitHub repository](https://github.com/NCAR/geocat-viz)
 
-### PyNGL
-* **Py**thon **N**CL **G**raphics **L**ibrary
-* [Project homepage](https://www.pyngl.ucar.edu)
-* [GitHub repository](https://github.com/NCAR/pyngl)
-* [Installation instructions](http://www.pyngl.ucar.edu/Download/)
-
-### PyNIO
-* **Py**thon **N**CL file **I**nput/**O**utput
-* [Project homepage](https://www.pyngl.ucar.edu/Nio.shtml)
-* [GitHub repository](https://github.com/NCAR/pynio)
-* [Installation instructions](http://www.pyngl.ucar.edu/Download/)
+### GeoCAT-datafiles
+* **GeoCAT** **datafiles** library (a collection of many data files from several file types that 
+are used by GeoCAT-examples and possibly other GeoCAT components to test or demonstrate GeoCAT 
+functionality)
+* [GitHub repository](https://github.com/NCAR/geocat-datafiles)
 
 ### WRF-Python
 * **Python** wrapper around NCL's **WRF**-specific computational routines
