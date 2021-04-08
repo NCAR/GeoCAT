@@ -19,15 +19,15 @@ maintain support for the effort.
 
 You can cite any GeoCAT software using the following citation format:
 
-Visualization & Analysis Systems Technologies. (Year). 
+**Visualization & Analysis Systems Technologies. (Year). 
 Geoscience Community Analysis Toolkit (\<Software package name\> version \<version_number\>) [Software]. 
-Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:10.5065/A8PP-4358.
+Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:10.5065/A8PP-4358.**
 
 You will need to update the GeoCAT software and its version as well as year as appropriate. For example, 
 if you used version 2021.04.0 of GeoCAT-comp (i.e. computational component of GeoCAT):
 
-Visualization & Analysis Systems Technologies. (2021). 
+**Visualization & Analysis Systems Technologies. (2021). 
 Geoscience Community Analysis Toolkit (GeoCAT-comp version 2021.04.0) [Software]. 
-Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:10.5065/A8PP-4358.
+Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:10.5065/A8PP-4358.**
 
 For more information about DOIs, see http://www.doi.org and http://en.wikipedia.org/wiki/Digital_object_identifier.
