@@ -15,7 +15,9 @@ GeoCAT software, we would like to ask you to please cite GeoCAT software toolkit
 us better understand the impact of the software on the scientific community, which in turn helps us 
 maintain support for the effort.
 
-You can cite any GeoCAT software using the following citation:
+### Citing GeoCAT software packages
+
+You can cite any GeoCAT software using the following citation format:
 
 Visualization & Analysis Systems Technologies. (Year). 
 Geoscience Community Analysis Toolkit (\<Software package name\> version \<version_number\>) [Software]. 
