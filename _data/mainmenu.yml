@@ -1,4 +1,6 @@
 menu:
+  - title: Project Raijin
+    url: /pages/raijin.html
   - title: Software
     url: /pages/software.html
   - title: Documentation
