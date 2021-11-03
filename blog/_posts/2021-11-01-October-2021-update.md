@@ -18,8 +18,7 @@ GeoCAT releases and community activities:
 Project Raijin, with its original title "Collaborative Research: 
 EarthCube Capabilities: Raijin: Community Geoscience Analysis 
 Tools for Unstructured Mesh Data", has been awarded by NSF 21-515 
-EarthCube for an award period of 1 September, 2021 - 31 August, 
-2024. 
+EarthCube for an award period of 1 September, 2021 - 31 August, 2024. 
 
 Check out the [Raijin website](https://raijin.ucar.edu/) for further 
 information!
