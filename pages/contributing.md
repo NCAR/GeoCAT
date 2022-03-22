@@ -266,7 +266,7 @@ laptop.
 
 5.  Finally, create a new branch in your local repository:
 
->     $ git checkout -b YOUR_BRANCH_NAME master
+>     $ git checkout -b YOUR_BRANCH_NAME main
 
 Where `YOUR_BRANCH_NAME` is the name that you want to give your local
 branch. What name should you choose? If the work that you are doing is
@@ -811,9 +811,9 @@ This will check out your forked repo
 
 ## 7.2 Branch creation
 
-1.  First, check out the master branch by running:
+1.  First, check out the main branch by running:
 
->     $ git checkout master
+>     $ git checkout main
 
 2.  Then pull the branch by running:
 
@@ -850,7 +850,7 @@ After making changes, run:
 
 To remove a branch that is no longer needed, run:
 
->     $ git checkout master
+>     $ git checkout main
 >     $ git branch -d <branch to be deleted>
 
 This will remove the local copy of the branch.
