@@ -266,7 +266,7 @@ laptop.
 
 5.  Finally, create a new branch in your local repository:
 
->     $ git checkout -b YOUR_BRANCH_NAME master
+>     $ git checkout -b YOUR_BRANCH_NAME main
 
 Where `YOUR_BRANCH_NAME` is the name that you want to give your local
 branch. What name should you choose? If the work that you are doing is
@@ -470,12 +470,15 @@ into web-accessible documentation available from the GeoCAT website.
 
 The docstring must contain:
 
-1.  A Brief summary of the functionality provided. What does this
+1. A brief summary of the functionality provided. What does this
     function do?
-2.  If available, references to the algorithm or implementation employed
-3.  A complete description of arguments and return values
-4.  One more more short usage examples that demonstrates how to invoke
+2. If available, references to the algorithm or implementation employed
+3. A complete description of arguments and return values
+4. One or more short usage examples that demonstrates how to invoke
     the function, and possibly what to expect it to return.
+
+If a usage example is longer than a handful of lines, a more complete
+example may be created in GeoCAT-examples.
 
 An example function and its docstring are shown here:
 
@@ -490,18 +493,14 @@ An example function and its docstring are shown here:
 >     Parameters
 >     ----------
 >
->     ax : :class:`matplotlib.axes._subplots.AxesSubplot` or 
->     :class:`cartopy.mpl.geoaxes.GeoAxesSubplot`: 
-> 
->       Current axes to the current figure
+>     ax : :class:`matplotlib.axes._subplots.AxesSubplot`, :class:`cartopy.mpl.geoaxes.GeoAxesSubplot`
+>           Current axes to the current figure
 >
->     zero_direction_label : :class:`bool`: 
-> 
->       Set True to get 0 E / O W or False to get 0 only.
+>     zero_direction_label : :class:`bool`
+>           Set True to get 0 E / O W or False to get 0 only.
 >
->     dateline_direction_label : :class:`bool`: 
-> 
->       Set True to get 180 E / 180 W or False to get 180 only.
+>     dateline_direction_label : :class:`bool`
+>           Set True to get 180 E / 180 W or False to get 180 only.
 >     
 >     """ 
 > ```
@@ -811,9 +810,9 @@ This will check out your forked repo
 
 ## 7.2 Branch creation
 
-1.  First, check out the master branch by running:
+1.  First, check out the main branch by running:
 
->     $ git checkout master
+>     $ git checkout main
 
 2.  Then pull the branch by running:
 
@@ -850,7 +849,7 @@ After making changes, run:
 
 To remove a branch that is no longer needed, run:
 
->     $ git checkout master
+>     $ git checkout main
 >     $ git branch -d <branch to be deleted>
 
 This will remove the local copy of the branch.
