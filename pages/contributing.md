@@ -324,7 +324,7 @@ use the term "Python environment" here we are referring to the Python
 programming language plus the myriad packages that go along with it.
 Because there are so many Python packages available, maintaining
 interoperability between them is a huge challenge. To overcome some of
-these difficulties we strongly recommend the use of Anaconda
+these difficulties we strongly recommend the use of
 [Anaconda](https://www.anaconda.com/download/) or
 [miniconda](https://conda.io/miniconda.html/) to manage your Python
 ecosystem. These package managers allow you to create a separate, custom
@@ -355,9 +355,11 @@ The steps:
 
 You should now have a Python environment that will work with GeoCAT. You
 should not need to reinstall Anaconda (or miniconda) again, but you may
-occasionally need to update the environment (step 2), and you will need
+occasionally need to update the conda (step 2), and you will need
 to activate geocat whenever you run Python on the contents of this
-repository (step 5).
+repository (step 5). It is also good practice to regularly update the
+packages in your environment to ensure you have the  most recent changes.
+See the following section for instructions on how to do this.
 
 ### 3.2.1 Updating Your Environment
 Since GeoCAT follows a continuous release model, changes are made every
