@@ -383,6 +383,25 @@ The steps:
 
 >     $ conda update --all
 
+### 3.2.2 Installing GeoCAT in a Pre-existing Environment
+If you started a project and later decided to use GeoCAT software,
+you will need to install GeoCAT in your pre-existing environment.
+
+The steps:
+1.  Make sure your conda is up to date by running this command from the
+    terminal:
+
+>     $ conda update conda
+
+2.  Activate the conda environment you want to add GeoCAT to. In this
+    example, the environment is called `foo`.
+
+>     $ conda activate foo
+
+3. Install GeoCAT like you would for a brand new environment
+
+>     $ conda install -c ncar -c conda-forge geocat-comp geocat-viz geocat-datafiles
+
 ## 3.3 Creating a development environment for compiled code
 
 To make changes to the [GeoCAT-f2py](https://github.com/NCAR/geocat-f2py) 
