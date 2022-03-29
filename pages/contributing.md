@@ -349,7 +349,7 @@ The steps:
 5.  Finally, configure your conda environment with the terminal
     commands:
 
->     $ conda create --name geocat python=3.7
+>     $ conda create --name geocat
 >     $ conda activate geocat
 >     $ conda install -c ncar -c conda-forge geocat-comp geocat-viz geocat-datafiles
 
@@ -358,6 +358,28 @@ should not need to reinstall Anaconda (or miniconda) again, but you may
 occasionally need to update the environment (step 2), and you will need
 to activate geocat whenever you run Python on the contents of this
 repository (step 5).
+
+### 3.2.1 Updating Your Environment
+Since GeoCAT follows a continuous release model, changes are made every
+month or so. If you suddenly begin to have issues with GeoCAT functions,
+the first step is to make sure your packages are up to date.
+
+The steps:
+1.  Make sure your conda is up to date by running this command from the
+    terminal:
+
+>     $ conda update conda
+
+2.  Activate the conda environment you want to update. In this example,
+    the environment is called `geocat`.
+
+>     $ conda activate geocat
+
+3. Update all packages in the current environment. This will update as
+   many packages as possible to their most recent verion, including GeoCAT
+   packages.
+
+>     $ conda update --all
 
 ## 3.3 Creating a development environment for compiled code
 
