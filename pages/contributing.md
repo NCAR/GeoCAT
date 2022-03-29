@@ -340,15 +340,12 @@ The steps:
     [miniconda](https://conda.io/miniconda.html/)
 2.  Make sure your conda is up to date by running this command from the
     terminal:
-
 >     $ conda update conda
-
 3.  Make sure that you have cloned the repository as described above in
     [Forking a Repository](#forking-a-repository).
 4.  Change working directories to the local copy of the repository.
 5.  Finally, configure your conda environment with the terminal
     commands:
-
 >     $ conda create --name geocat
 >     $ conda activate geocat
 >     $ conda install -c ncar -c conda-forge geocat-comp geocat-viz geocat-datafiles
@@ -369,18 +366,13 @@ the first step is to make sure your packages are up to date.
 The steps:
 1.  Make sure your conda is up to date by running this command from the
     terminal:
-
 >     $ conda update conda
-
 2.  Activate the conda environment you want to update. In this example,
     the environment is called `geocat`.
-
 >     $ conda activate geocat
-
 3. Update all packages in the current environment. This will update as
    many packages as possible to their most recent verion, including GeoCAT
    packages.
-
 >     $ conda update --all
 
 ### 3.2.2 Installing GeoCAT in a Pre-existing Environment
@@ -390,16 +382,11 @@ you will need to install GeoCAT in your pre-existing environment.
 The steps:
 1.  Make sure your conda is up to date by running this command from the
     terminal:
-
 >     $ conda update conda
-
 2.  Activate the conda environment you want to add GeoCAT to. In this
     example, the environment is called `foo`.
-
 >     $ conda activate foo
-
 3. Install GeoCAT like you would for a brand new environment
-
 >     $ conda install -c ncar -c conda-forge geocat-comp geocat-viz geocat-datafiles
 
 ## 3.3 Creating a development environment for compiled code
