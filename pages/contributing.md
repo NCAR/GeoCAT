@@ -324,7 +324,7 @@ use the term "Python environment" here we are referring to the Python
 programming language plus the myriad packages that go along with it.
 Because there are so many Python packages available, maintaining
 interoperability between them is a huge challenge. To overcome some of
-these difficulties we strongly recommend the use of Anaconda
+these difficulties we strongly recommend the use of
 [Anaconda](https://www.anaconda.com/download/) or
 [miniconda](https://conda.io/miniconda.html/) to manage your Python
 ecosystem. These package managers allow you to create a separate, custom
@@ -340,24 +340,54 @@ The steps:
     [miniconda](https://conda.io/miniconda.html/)
 2.  Make sure your conda is up to date by running this command from the
     terminal:
-
 >     $ conda update conda
-
 3.  Make sure that you have cloned the repository as described above in
     [Forking a Repository](#forking-a-repository).
 4.  Change working directories to the local copy of the repository.
 5.  Finally, configure your conda environment with the terminal
     commands:
-
->     $ conda create --name geocat python=3.7
+>     $ conda create --name geocat
 >     $ conda activate geocat
 >     $ conda install -c ncar -c conda-forge geocat-comp geocat-viz geocat-datafiles
 
 You should now have a Python environment that will work with GeoCAT. You
 should not need to reinstall Anaconda (or miniconda) again, but you may
-occasionally need to update the environment (step 2), and you will need
+occasionally need to update the conda (step 2), and you will need
 to activate geocat whenever you run Python on the contents of this
-repository (step 5).
+repository (step 5). It is also good practice to regularly update the
+packages in your environment to ensure you have the  most recent changes.
+See the following section for instructions on how to do this.
+
+### 3.2.1 Updating Your Environment
+Since GeoCAT follows a continuous release model, changes are made every
+month or so. If you suddenly begin to have issues with GeoCAT functions,
+the first step is to make sure your packages are up to date.
+
+The steps:
+1.  Make sure your conda is up to date by running this command from the
+    terminal:
+>     $ conda update conda
+2.  Activate the conda environment you want to update. In this example,
+    the environment is called `geocat`.
+>     $ conda activate geocat
+3. Update all packages in the current environment. This will update as
+   many packages as possible to their most recent verion, including GeoCAT
+   packages.
+>     $ conda update --all
+
+### 3.2.2 Installing GeoCAT in a Pre-existing Environment
+If you started a project and later decided to use GeoCAT software,
+you will need to install GeoCAT in your pre-existing environment.
+
+The steps:
+1.  Make sure your conda is up to date by running this command from the
+    terminal:
+>     $ conda update conda
+2.  Activate the conda environment you want to add GeoCAT to. In this
+    example, the environment is called `foo`.
+>     $ conda activate foo
+3. Install GeoCAT like you would for a brand new environment
+>     $ conda install -c ncar -c conda-forge geocat-comp geocat-viz geocat-datafiles
 
 ## 3.3 Creating a development environment for compiled code
 
