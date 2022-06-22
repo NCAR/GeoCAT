@@ -53,7 +53,7 @@ Instead, if you would like to cite a specific version of any GeoCAT software, us
 text:
 
 **Visualization & Analysis Systems Technologies. (Year).
-Geoscience Community Analysis Toolkit: GeoCAT-comp (v\<version\>) [Software].
+Geoscience Community Analysis Toolkit: \<Software package name\> (v\<version\>) [Software].
 Boulder, CO, USA: UCAR/NCAR - Computational and Informational System Lab. doi:\<DOI\>.**
 
 URLs to version-specific DOIs for each GeoCAT software tool can be found in their own GitHub repository
