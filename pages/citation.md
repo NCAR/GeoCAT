@@ -11,10 +11,9 @@ as citable locators for scholarly objects. The GeoCAT DOI, when used in URL form
 [https://doi.org/10.5065/a8pp-4358](https://doi.org/10.5065/a8pp-4358), provides a persistent link to the 
 GeoCAT web page, and can be used to cite the GeoCAT project as a whole.
 
-In addition, each GeoCAT tool is assigned a separate Digital Object Identifier (DOI) per version to allow
-users to access older releases. This ensures that users are not only able to cite the specific
-software version through DOIs but are also able to download & use the corresponding release for
-reproducibility purposes.
+In addition, each GeoCAT tool is assigned a separate DOI per version to allow users to access older 
+releases. This ensures that users are not only able to cite the specific software version through DOIs 
+but are also able to download & use the corresponding release for reproducibility purposes.
 
 If you author a paper that involves data analysis and/or visualization performed with the use of any 
 GeoCAT software, we would like to ask you to please cite GeoCAT software toolkits you used. This helps 
@@ -41,8 +40,13 @@ the following text:
 Geoscience Community Analysis Toolkit: \<Software package name\> [Software].
 Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:\<DOI\>.**
 
-In the above citation text, update the software package name as appropriate. DOI for each GeoCAT 
-software tool can be found in their own GitHub repository or documentation.
+DOI for each GeoCAT software tool can be found in their own GitHub repository or documentation. 
+In the above citation text, update the software package name as appropriate. For example,
+if you used GeoCAT-comp (i.e. the computational component of GeoCAT):
+
+**Visualization & Analysis Systems Technologies. (Year).
+Geoscience Community Analysis Toolkit: GeoCAT-comp [Software].
+Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:10.5281/zenodo.6607205.**
 
 Instead, if you would like to cite a specific version of any GeoCAT software, use the following 
 text:
@@ -51,14 +55,12 @@ text:
 Geoscience Community Analysis Toolkit: GeoCAT-comp (v\<version\>) [Software].
 Boulder, CO, USA: UCAR/NCAR - Computational and Informational System Lab. doi:\<DOI\>.**
 
-In the above citation text, update the year, GeoCAT package version, and DOI as appropriate. For example,
-if you used version 2022.04.0 of GeoCAT-comp (i.e. computational component of GeoCAT):
+URLs to version-specific DOIs for each GeoCAT software tool can be found in their own GitHub repository
+or documentation. In the above citation text, update the year, GeoCAT package version, and DOI as appropriate. 
+For example, if you used version 2022.04.0 of GeoCAT-comp (i.e. computational component of GeoCAT):
 
 **Visualization & Analysis Systems Technologies. (2022).
 Geoscience Community Analysis Toolkit: GeoCAT-comp (v2022.04.0) [Software].
 Boulder, CO, USA: UCAR/NCAR - Computational and Informational System Lab. doi:10.5281/zenodo.6607349.**
-
-URLs to version-specific DOIs for each GeoCAT software tool can be found in their own GitHub repository 
-or documentation.
 
 For more information about DOIs, see http://www.doi.org and http://en.wikipedia.org/wiki/Digital_object_identifier.
