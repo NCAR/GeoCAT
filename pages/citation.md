@@ -26,7 +26,7 @@ reproducible.
 
 You can cite the entire GeoCAT project using the following citation text:
 
-**Visualization & Analysis Systems Technologies. (Year).
+**Visualization & Analysis Systems Technologies. (2019).
 Geoscience Community Analysis Toolkit. Boulder, CO: UCAR/NCAR - Computational 
 and Informational System Lab. doi:10.5065/a8pp-4358.**
 
@@ -36,15 +36,16 @@ and Informational System Lab. doi:10.5065/a8pp-4358.**
 If you would like to cite any GeoCAT software without referring to a specific version, use
 the following text:
 
-**Visualization & Analysis Systems Technologies. (Year).
+**Visualization & Analysis Systems Technologies. (\<Year\>).
 Geoscience Community Analysis Toolkit: \<Software package name\> [Software].
 Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:\<DOI\>.**
 
 DOI for each GeoCAT software tool can be found in their own GitHub repository or documentation. 
-In the above citation text, update the software package name as appropriate. For example,
-if you used GeoCAT-comp (i.e. the computational component of GeoCAT):
+In the above citation text, update the software package name and the year of package's 
+initialization as appropriate. For example, if you used GeoCAT-comp (i.e. the computational 
+component of GeoCAT):
 
-**Visualization & Analysis Systems Technologies. (Year).
+**Visualization & Analysis Systems Technologies. (2019).
 Geoscience Community Analysis Toolkit: GeoCAT-comp [Software].
 Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:10.5281/zenodo.6607205.**
 
@@ -56,8 +57,9 @@ Geoscience Community Analysis Toolkit: GeoCAT-comp (v\<version\>) [Software].
 Boulder, CO, USA: UCAR/NCAR - Computational and Informational System Lab. doi:\<DOI\>.**
 
 URLs to version-specific DOIs for each GeoCAT software tool can be found in their own GitHub repository
-or documentation. In the above citation text, update the year, GeoCAT package version, and DOI as appropriate. 
-For example, if you used version 2022.04.0 of GeoCAT-comp (i.e. computational component of GeoCAT):
+or documentation. In the above citation text, update the year of the version, GeoCAT package version, 
+and DOI as appropriate. For example, if you used version 2022.04.0 of GeoCAT-comp (i.e. computational 
+component of GeoCAT):
 
 **Visualization & Analysis Systems Technologies. (2022).
 Geoscience Community Analysis Toolkit: GeoCAT-comp (v2022.04.0) [Software].
