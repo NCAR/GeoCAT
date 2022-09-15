@@ -18,7 +18,7 @@ install GeoCAT tools from conda-forge for the latest version. For
 reproducibility purposes however, the older versions at the NCAR channel 
 will still be accessible.
 
-Geocat tools affected by this decision:
+GeoCAT tools affected by this decision:
 - GeoCAT-comp
 - GeoCAT-f2py
 - GeoCAT-viz
