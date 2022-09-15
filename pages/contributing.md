@@ -348,7 +348,7 @@ The steps:
     commands:
 >     $ conda create --name geocat
 >     $ conda activate geocat
->     $ conda install -c ncar -c conda-forge geocat-comp geocat-viz geocat-datafiles
+>     $ conda install -c conda-forge geocat-comp geocat-viz geocat-datafiles
 
 You should now have a Python environment that will work with GeoCAT. You
 should not need to reinstall Anaconda (or miniconda) again, but you may
@@ -387,7 +387,7 @@ The steps:
     example, the environment is called `foo`.
 >     $ conda activate foo
 3. Install GeoCAT like you would for a brand new environment
->     $ conda install -c ncar -c conda-forge geocat-comp geocat-viz geocat-datafiles
+>     $ conda install -c conda-forge geocat-comp geocat-viz geocat-datafiles
 
 ## 3.3 Creating a development environment for compiled code
 
