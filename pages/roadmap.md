@@ -48,12 +48,15 @@ and/or milestones are also defined for activities when applicable.
 
 Each task under every GeoCAT objective mostly corresponds to a separate 
 software package or GitHub asset of GeoCAT's. Therefore, we will provide 
-links to Github dicussions for each task in this document, where you can let 
-us hear your voice. That way, we can ensure an open community conversation, 
+links to GitHub discussions for each task in this document, where you can let 
+us hear your voice.
+
+That way, we can ensure an open community conversation, 
 virtually about anything.
 
 If you are not comfortable with GitHub discussions, you can always reach out 
 to us via our email: geoact@ucar.edu
+
 
 # 2. Roadmap
 
@@ -61,33 +64,104 @@ to us via our email: geoact@ucar.edu
 
 ### 2.1.1. Project Raijin
 
+1. Uxarray
+   - Milestone: API redesign to satisfy both the usage requirements & 
+     specifications as well as to comply with the Xarray-extension best 
+     practices
+   - Analysis operators development
+   - Basic visualization functions development
+
+
 ### 2.1.2. GeoCAT-comp & GeoCAT-f2py
 
 1. New functionality
    - Community feature requests
-   - Backlog
-   - Some Fortran to Python conversion
-2. Community Engagement
-   - Showcase functionality to community (examples, outreach, cross-posting, talks, etc)
-   - Continue to research and match community packaging standards
-3. Improvement, maintenance, and quality of life updates
-   - Optimization/benchmarking (SIParCS intern)
-   - Support of M1/M2 and Windows
-   - Ensuring scalability/dask compatibility
+   - Existing backlog items
+   - Fortran to Python conversion
+2. Improvement, maintenance, and quality of life updates
+   - Optimization/benchmarking (SIParCS internship)
+   - Support for M1/M2 and Windows platforms
    - Documentation improvements
+   - Continue to research and match community packaging standards
     
 ### 2.1.3. GeoCAT-examples & GeoCAT-viz
 
+1. New functionality
+   - New examples from community requests
+   - New examples from ordered list (TBD)
+   - Changes to existing examples for clarity
+2. Improvement, maintenance, and quality of life updates
+   - Support for mesh-based rendering
+   - Interactive plots, beginning with support for time step animations
+   - Changes to existing examples to keep up with dependencies
+
+
 ### 2.1.4. Project Pythia
+
+1. Leverage Project Pythia outreach efforts to announce releases
+2. Contribution reviews
+   - Provide reviews for contributions to the Pythia assets (mostly in the 
+     form of GitHub pull-requests)
+3. Content support   
+   - Generate GeoCAT Cookbook(s) that show off new functionalities
 
 ### 2.1.5. WRF-Python
 
+1. User support
+2. Explore improved Xarray compatibility
+
 ### 2.1.6. NCL
+
+1. Conda installation support
+
 
 ## 2.2. Open development & community engagement
 
+1. Pangeo community
+   - Retain GeoCAT presence at Pangeo events (e.g. weekly meetings, 
+     dev. meetings, etc.)
+   - Seek increased Pangeo involvement in Raijin’s Uxarray development
+2. NCAR’s ESDS (Earth System Data Science)
+   - Continue GeoCAT presence at ESDS
+   - Continue organizing/supporting ESDS events (e.g. weekly office hours, 
+     bi-weekly forums, annual-like tutorials, etc.) 
+3. Publications & presentations
+   - AGU, AMS presentations
+   - GeoCAT updates, talks, tutorials, etc.
+4. Project Raijin
+    - Continue Raijin & SEATS collaboration
+    - Collaboration with NCAR’s SIMA (System for Integrated Modeling of
+      the Atmosphere)
+        - NetCDF datasets in Ugrid convention
+    - Seek new collaborations
+5. GeoCAT-comp & GeoCAT-f2py
+   - Showcase functionality to community (examples, outreach, 
+     cross-posting, talks, etc)
+6. GeoCAT-examples & GeoCAT-viz
+   - Assisting SIParCS internships for Virginia Do
+   - Provide content and presentations for educational content throughout 
+     the year
+7. Project Pythia
+   - Contribute to Project Pythia outreach efforts such as Python tutorials, 
+    etc.
+
+
 ## 2.3. Scalability
 
+1. Dask (GeoCAT-comp & UXarray)
+   - Ensure compatibility & apply best practices (GepCAT-comp SIParCS 
+     internship)
+     - Investigate the existing function implementations to check if they 
+       were implemented with Dask best practices
+     - Ensure it for new implementations
+   - Performance analysis
+     - Investigate the performance of the existing function implementations 
+       with Dask
+     - Performance comparison with NCL counterparts or others
+2. GPU programming (GeoCAT-comp & UXarray)
+   - Explore
+3. Numba (GeoCAT-comp & UXarray)
+   - Explore & apply Numba JIT compilation whenever possible
 
 
 
