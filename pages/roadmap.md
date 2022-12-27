@@ -46,16 +46,21 @@ and/or milestones are also defined for activities when applicable.
 
 ## 1.4. How to give feedback & input to this roadmap?
 
-Each task under every GeoCAT objective mostly corresponds to a separate 
-software package or GitHub asset of GeoCAT's. Therefore, we will provide 
-links to GitHub discussions for each task in this document, where you can let 
-us hear your voice.
+If you'd like to provide any feedback/input about this roadmap, 
+you can always use the [GeoCAT 2023 
+roadmap](https://github.com/NCAR/GeoCAT/discussions/60) discussion.
 
-That way, we can ensure an open community conversation, 
-virtually about anything.
+However, some task under GeoCAT objectives might correspond to a 
+separate software package or GitHub asset of GeoCAT. Therefore, we will 
+also provide links to corresponding GitHub discussions for such tasks  
+throughout this document, through which you can let us hear your voice 
+about a particular part of GeoCAT. 
 
-If you are not comfortable with GitHub discussions, you can always reach out 
-to us via our email: geoact@ucar.edu
+That way, we can ensure an open community conversation, virtually about 
+anything.
+
+If you are not comfortable with GitHub discussions though, you can also 
+reach out to us via our email: geocat@ucar.edu
 
 
 # 2. Roadmap
@@ -64,19 +69,34 @@ to us via our email: geoact@ucar.edu
 
 ### 2.1.1. Project Raijin
 
-1. Uxarray
+Unless recommended otherwise in the following items, please see the 
+[UXarray 2023 Roadmap](https://github.com/UXARRAY/uxarray/discussions/196) 
+and put your Raijin inputs, if any.
+
+1. UXarray
    - Milestone: API redesign to satisfy both the usage requirements & 
-     specifications as well as to comply with the Xarray-extension best 
+     specifications and to comply with the Xarray-extension best 
      practices
+     - See the [UXarray Redesign Thoughts and 
+       Options](https://github.com/UXARRAY/uxarray/discussions/185) 
+       discussion for detailed information and your inputs.
    - Analysis operators development
+     - See the [Prioritization of Uxarray analysis 
+       operators](https://github.com/UXARRAY/uxarray/discussions/46) 
+       discussion for detailed information and your inputs.
    - Basic visualization functions development
 
 
 ### 2.1.2. GeoCAT-comp & GeoCAT-f2py
 
+Unless recommended otherwise in the following items, please see the
+[GeoCAT-comp & GeoCAT-f2py 2023 
+Roadmap](https://github.com/NCAR/geocat-comp/discussions/323)
+and put your GeoCAT-comp & GeoCAT-f2py inputs, if any.
+
 1. New functionality
    - Community feature requests
-   - Existing backlog items
+   - [Existing backlog items](https://github.com/orgs/NCAR/projects/42/views/12)
    - Fortran to Python conversion
 2. Improvement, maintenance, and quality of life updates
    - Optimization/benchmarking (SIParCS internship)
@@ -85,6 +105,11 @@ to us via our email: geoact@ucar.edu
    - Continue to research and match community packaging standards
     
 ### 2.1.3. GeoCAT-examples & GeoCAT-viz
+
+Unless recommended otherwise in the following items, please see the
+[GeoCAT-examples & GeoCAT-viz 2023
+Roadmap](https://github.com/NCAR/GeoCAT-examples/discussions/492)
+and put your GeoCAT-examples & GeoCAT-viz inputs, if any.
 
 1. New functionality
    - New examples from community requests
@@ -120,7 +145,7 @@ to us via our email: geoact@ucar.edu
 1. Pangeo community
    - Retain GeoCAT presence at Pangeo events (e.g. weekly meetings, 
      dev. meetings, etc.)
-   - Seek increased Pangeo involvement in Raijin’s Uxarray development
+   - Seek increased Pangeo involvement in Raijin’s UXarray development
 2. NCAR’s ESDS (Earth System Data Science)
    - Continue GeoCAT presence at ESDS
    - Continue organizing/supporting ESDS events (e.g. weekly office hours, 
@@ -129,11 +154,11 @@ to us via our email: geoact@ucar.edu
    - AGU, AMS presentations
    - GeoCAT updates, talks, tutorials, etc.
 4. Project Raijin
-    - Continue Raijin & SEATS collaboration
-    - Collaboration with NCAR’s SIMA (System for Integrated Modeling of
-      the Atmosphere)
-        - NetCDF datasets in Ugrid convention
-    - Seek new collaborations
+   - Continue Raijin & SEATS collaboration on UXarray development
+   - Collaboration with NCAR’s SIMA (System for Integrated Modeling of 
+     the Atmosphere)
+     - NetCDF datasets in UGRID convention
+   - Seek new collaborations
 5. GeoCAT-comp & GeoCAT-f2py
    - Showcase functionality to community (examples, outreach, 
      cross-posting, talks, etc)
@@ -149,7 +174,7 @@ to us via our email: geoact@ucar.edu
 ## 2.3. Scalability
 
 1. Dask (GeoCAT-comp & UXarray)
-   - Ensure compatibility & apply best practices (GepCAT-comp SIParCS 
+   - Ensure compatibility & apply best practices (GeoCAT-comp SIParCS 
      internship)
      - Investigate the existing function implementations to check if they 
        were implemented with Dask best practices
@@ -157,11 +182,8 @@ to us via our email: geoact@ucar.edu
    - Performance analysis
      - Investigate the performance of the existing function implementations 
        with Dask
-     - Performance comparison with NCL counterparts or others
 2. GPU programming (GeoCAT-comp & UXarray)
    - Explore
-3. Numba (GeoCAT-comp & UXarray)
-   - Explore & apply Numba JIT compilation whenever possible
 
 
 
