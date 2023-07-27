@@ -40,7 +40,9 @@ ecosystem (primarily, Matplotlib and Cartopy) ( similar or identical to those pl
 ### GeoCAT-viz
 * **GeoCAT** **vi**suali**z**ation library (a collection of Python functions intended to make 
 Matplotlib/Cartopy feel more like NCL)
+* [Project homepage](https://geocat-viz.readthedocs.io/)
 * [GitHub repository](https://github.com/NCAR/geocat-viz)
+* [Installation instructions](https://geocat-viz.readthedocs.io/en/latest/installation.html)
 
 ### GeoCAT-datafiles
 * **GeoCAT** **datafiles** library (a collection of many data files from several file types that 
