@@ -10,6 +10,9 @@ title: Documentation
 ### GeoCAT-f2py
 * [GeoCAT-f2py Documentation](https://geocat-f2py.readthedocs.io/)
 
+### GeoCAT-viz
+* [GeoCAT-viz Documentation](https://geocat-viz.readthedocs.io/)
+
 ### GeoCAT-examples
 * [GeoCAT-examples Documentation](https://geocat-examples.readthedocs.io/en/latest/index.html)
 
