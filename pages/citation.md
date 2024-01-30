@@ -27,8 +27,8 @@ reproducible.
 You can cite the entire GeoCAT project using the following citation text:
 
 **Visualization & Analysis Systems Technologies. (2019).
-Geoscience Community Analysis Toolkit. Boulder, CO: UCAR/NCAR - Computational 
-and Informational System Lab. doi:10.5065/a8pp-4358.**
+Geoscience Community Analysis Toolkit. Boulder, CO: NSF NCAR Computational 
+and Information Systems Lab. doi:10.5065/a8pp-4358.**
 
 
 ### Citing GeoCAT software packages
@@ -38,7 +38,7 @@ the following text:
 
 **Visualization & Analysis Systems Technologies. (\<Year\>).
 Geoscience Community Analysis Toolkit: \<Software package name\> [Software].
-Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:\<DOI\>.**
+Boulder, CO: NSF NCAR Computational and Information Systems Lab. doi:\<DOI\>.**
 
 DOI for each GeoCAT software tool can be found in their own GitHub repository or documentation. 
 In the above citation text, update the software package name and the year of package's 
@@ -47,14 +47,14 @@ component of GeoCAT):
 
 **Visualization & Analysis Systems Technologies. (2019).
 Geoscience Community Analysis Toolkit: GeoCAT-comp [Software].
-Boulder, CO: UCAR/NCAR - Computational and Informational System Lab. doi:10.5281/zenodo.6607205.**
+Boulder, CO: NSF NCAR Computational and Information Systems Lab. doi:10.5281/zenodo.6607205.**
 
 Instead, if you would like to cite a specific version of any GeoCAT software, use the following 
 text:
 
 **Visualization & Analysis Systems Technologies. (Year).
 Geoscience Community Analysis Toolkit: \<Software package name\> (v\<version\>) [Software].
-Boulder, CO, USA: UCAR/NCAR - Computational and Informational System Lab. doi:\<DOI\>.**
+Boulder, CO, USA: NSF NCAR Computational and Information Systems Lab. doi:\<DOI\>.**
 
 URLs to version-specific DOIs for each GeoCAT software tool can be found in their own GitHub repository
 or documentation. In the above citation text, update the year of the version, GeoCAT package version, 
@@ -63,6 +63,6 @@ component of GeoCAT):
 
 **Visualization & Analysis Systems Technologies. (2022).
 Geoscience Community Analysis Toolkit: GeoCAT-comp (v2022.04.0) [Software].
-Boulder, CO, USA: UCAR/NCAR - Computational and Informational System Lab. doi:10.5281/zenodo.6607349.**
+Boulder, CO, USA: NSF NCAR Computational and Information Systems Lab. doi:10.5281/zenodo.6607349.**
 
 For more information about DOIs, see http://www.doi.org and http://en.wikipedia.org/wiki/Digital_object_identifier.

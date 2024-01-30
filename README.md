@@ -1,6 +1,6 @@
 # Using the koru-jekyll theme
 
-This is a theme based on UCAR/NCAR's custom 'koru' design. It is built on top the Foundation framework. This provides users and developers with responsiveness and accessibility. The site can be found [here](https://ncar.github.io/jekyll-koru-test/).
+This is a theme based on UCAR and NSF NCAR's custom 'koru' design. It is built on top the Foundation framework. This provides users and developers with responsiveness and accessibility. The site can be found [here](https://ncar.github.io/jekyll-koru-test/).
 
 * [Layouts](#layouts)
 * [Main Menu](#main-menu)
