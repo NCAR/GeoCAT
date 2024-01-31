@@ -10,8 +10,8 @@ youtubeID: 34zFGkDwJPc
 # Welcome
 
 **Geo**science **C**ommunity **A**nalysis **T**oolkit (**GeoCAT**), established in 2019, leads the software
-engineering efforts of the National Center for Atmospheric Research (NCAR) Computational and Information
-Systems Lab (CISL)’s “Pivot to Python” initiative. Support for GeoCAT is provided by the U.S. **National
+engineering efforts of the NSF National Center for Atmospheric Research (NSF NCAR) Computational and Information
+Systems Lab (CISL)’s “Pivot to Python” initiative. Support for GeoCAT is provided by the **U.S. National
 Science Foundation**.
 
 GeoCAT essentially aims at creating scalable data analysis and visualization tools for Earth System Science

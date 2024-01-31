@@ -146,7 +146,7 @@ and put your GeoCAT-examples & GeoCAT-viz inputs, if any.
    - Retain GeoCAT presence at Pangeo events (e.g. weekly meetings, 
      dev. meetings, etc.)
    - Seek increased Pangeo involvement in Raijin’s UXarray development
-2. NCAR’s ESDS (Earth System Data Science)
+2. NSF NCAR’s ESDS (Earth System Data Science)
    - Continue GeoCAT presence at ESDS
    - Continue organizing/supporting ESDS events (e.g. weekly office hours, 
      bi-weekly forums, annual-like tutorials, etc.) 
@@ -155,7 +155,7 @@ and put your GeoCAT-examples & GeoCAT-viz inputs, if any.
    - GeoCAT updates, talks, tutorials, etc.
 4. Project Raijin
    - Continue Raijin & SEATS collaboration on UXarray development
-   - Collaboration with NCAR’s SIMA (System for Integrated Modeling of 
+   - Collaboration with NSF NCAR’s SIMA (System for Integrated Modeling of 
      the Atmosphere)
      - NetCDF datasets in UGRID convention
    - Seek new collaborations
